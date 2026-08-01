@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Discord Embed Recreation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="chat-wrap">
+    <div class="message">
+      <div class="avatar">
+        <!-- Drop a file named "avatar.jpg" in this folder to use a real profile picture.
+             Until then this just shows the gradient placeholder below. -->
+        <img src="avatar.jpg" alt="" onerror="this.style.display='none'">
+      </div>
+      <div class="msg-body">
+        <div class="msg-header">
+          <span class="username">! Insani || DTTM</span>
+          <span class="timestamp">6:59 AM</span>
+        </div>
+        <div class="msg-text">insanitube</div>
+
+        <div class="embed">
+          <div class="embed-author">Insani</div>
+          <div class="embed-title">Konpeki</div>
+          <a class="embed-desc" href="#">Unwritten Rules To Instantly Climb Out of Low Elo</a>
+
+          <div class="embed-media" id="mediaBox" onclick="playMedia()">
+            <video id="vid" poster="thumbnail.jpg" preload="metadata">
+              <source src="video.mp4" type="video/mp4">
+            </video>
+
+            <div class="media-controls">
+              <div class="play-btn">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </div>
+              <div class="expand-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                  <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="tosverf.js"></script>
+  <script src="redirect.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
